@@ -1,0 +1,411 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Trellis Css Framework</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="style.css">
+
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+
+
+        <div class="t-contain t-pos-cntr top-element">
+            
+               <div class="pad-top pad-bottom">
+                <h1 class="pad-half-bottom">Trellis CSS</h1>
+                <h3>A CSS base and framework. </h3>
+                <p>Many CSS frameworks are enginiered with a multitude of formating styles in an effort to help you quickly achieve a well designed layout. These included format styles can become a hinderance when the need comes to override them becuase of design requirements. Trellis creates a configurable set of styles with formating and responsive layout classes. Trellis does add certain style properties to some elements to help give you the "plainest" canvas for building upon.</p>
+              <a href="https://github.com/theelixirhaus/Trellis" target="_blank" class="btn-github"><img src="http://www.theelixirhaus.com/wp-content/themes/theelixirhaus-v2/assets/img/projects/brewer/btn-github.png" alt="Link to Repo"></a>
+              <div class="pad-half-bottom"></div>
+
+                <p> Some of the key styles Trellis adds are :</p>
+                <ul class="nobull">
+                    <li><p><strong>Box Sizing</strong>  <br/>Set div, section, article, img, span to "Border-box" box sizing so that padding and borders to enlarge the dimensions of said objects when they are applied.</p></li>
+                    <li><p><strong>P Tags </strong>  <br/>The top margin is removed from the first occurrence of a P tag within a block, and the bottom margin of the last P tag is removed from the same block. This allows for total control over the spacing of elements above and below articles to maintain consistency.</p></li>
+                    <li><p><strong>Overflow</strong>  <br />div, section, article, img tags are all set to to have a "hidden" Overflow by default, to allow containers to properly encompass ttheir elements.</p></li>
+                </ul>
+
+                <p> Additionally Trellis uses a configuration file to set global SCSS variables for screen break points, colors, font sites, and the site's maximum width. It also allows you to set a site padding variable. This variable helps maintain consistent spacing tthroughout your site by using it and factors of it.
+
+            </div>
+
+            <h2>Text and Formating</h2>
+ 
+            <h3>Configure a set of font size classes for constanty.</h3>
+           
+            <p class="t-txt-h1">.t-txt-h1<p>
+
+           <p class="t-txt-h2">.t-txt-h2<p>
+
+            <p class="t-txt-h3">.t-txt-h3<p>
+
+             <p class="t-txt-h4">.t-txt-h4<p>
+
+           <p class="t-txt-big">.t-txt-big<p>
+
+            <p class="t-txt-med">.t-txt-med<p>
+
+            <p class="t-txt-norm">.t-txt-norm<p>
+
+           <p class="t-txt-sm">.t-txt-sm<p>
+
+
+            <h2 class="pad-top">Colors</h2>
+ 
+            <h3>Establish a formal color and tone pallet</h3>
+           
+            <p class="t-txt-clr1">.t-txt-clr1<p>
+
+           <p class="t-txt-clr2">.t-txt-clr2<p>
+
+            <p class="t-txt-clr3">.t-txt-clr3<p>
+
+            <p class="t-txt-clr4">.t-txt-clr5<p>
+
+            <p class=".t-txt-grey1">.t-txt-grey1<p>
+
+            <p class="t-txt-grey2">.t-txt-grey2<p>
+
+            <p class="t-txt-grey3">.t-txt-grey3<p>
+    
+        <div class="t-view-m-fit-3">
+            <div class="t-bg-clr1 pad-half">.t-bg-clr1</div>
+            <div class="t-bg-clr2 pad-half">.t-bg-clr2</div>
+            <div class="t-bg-clr3 pad-half">.t-bg-clr3</div>
+            <div class="t-bg-clr4 pad-half">.t-bg-clr4</div>
+            <div class="t-bg-clr5 pad-half">.t-bg-clr5</div>
+            <div class="t-bg-grey1 pad-half">.t-bg-grey1</div>
+            <div class="t-bg-grey2 pad-half">.t-bg-grey2</div>
+            <div class="t-bg-grey3 pad-half">.t-bg-grey3</div>
+            <div class="t-bg-grey4 pad-half">.t-bg-grey4</div>
+        </div>
+
+
+            <h2 class="pad-top">Align Text</h2> 
+            <div class="t-txt-cntr border pad-half marg-half-bottom"><p><strong>.t-txt-cntr</strong> 
+                <br> Align text center</p>
+            </div>   
+
+             <div class="t-txt-rt pad-half border marg-half-bottom"><p><strong> .t-txt-rt </strong> 
+                <br> Align text right</p>
+            </div>
+            
+
+
+            <h2 class="pad-half-top">Element Positioning</h2>
+
+            <p><strong> .t-pos-rel  </strong> :  Position element “relative”. </p>
+
+            <p><strong> .t-pos-abs  </strong> :  Position element “absolute”.  </p>
+
+           <p><strong> .t-pos-fixed  </strong> :  Position element “fixed”.</p>
+            
+            <div class="border pad-half">
+                <div class="t-pos-cntr marg-half-bottom">
+                <div class="t-pos-cntr border pad-half" style="max-width:200px"><p><strong>.t-pos-cntr</strong> <br> Element requires a width.</p></div>
+            </div>
+
+             <div class="t-pos-cntr marg-half-bottom">
+                <div class="t-pos-rt border pad-half" style="max-width:200px"><p><strong> .t-pos-rt</strong>  <br> Element requires a width.</p></div>
+            </div>
+            </div>
+            
+        
+
+            <h2 class="pad-top">Layout</h2>
+
+            <div style="width:100%; display:block"> <p><strong> .t-valigner</strong> : Vertical Align Elements  - Parent element needs set heigh</p></div>
+            <div class="t-valigner border" style="height:400px">
+              
+                <div class="t-valign pad-half">
+                    <p><strong>.t-valign  </strong>:   vertically aligned child element</p>
+                </div>
+            </div>
+
+      
+            <h2 class="pad-top">Establish a site width</h2>
+
+            <div class="border pad-half" style="max-width:900px">
+            <p><strong>.t-contain</strong>  <br/>  Adds the site’s "max-width" in order to contain elements. Used typically as the main content container of the site. Often used with .t-pos-cntr to center the container within the browser. </p>
+            </div>
+
+
+
+            
+            <h2 class="pad-top">Responsive Grids</h2>
+
+            <h3 >Defined Columns Widths</h3>
+            <p >Grid elements are positioned left and displayed as blocks. They can be set to specific responsive width.<p>
+            <p >The “#” can be replaced with any number 1-100 in increments of 5 -  I.E 0,5,10,15…</p>
+          <ul class="nobull pad-half-bottom">
+            <li><p><strong>.t-view-xs-#pc</strong> :   Show this width on Mobile Portrait screen widths and up.</p></li>
+            <li><p><strong>.t-view-s-#pc</strong>  :   Show this width up to Tablet Portrait/Mobile Landscape screen widths.</p></li>
+            <li><p><strong>.t-view-m-#pc</strong>  :   Show this width on Tablet Landscape screen widths and up.</p></li>
+            <li><p><strong>.t-view-l-#pc</strong>  :   Show this width on Desktop screen widths and up.</p></li>
+           </ul>
+
+            <div class="border pad-half-">
+                <div class="border t-view-m-25pc">
+                    <div class='pad-half'>
+                        <p><strong>.t-view-m-25pc</strong></p>
+                    </div>
+                </div>
+
+                    <div class="border t-view-m-45pc">
+                    <div class='pad-half'>
+                        <p><strong>.t-view-m-45pc</strong></p>
+                    </div>
+                </div>
+
+                 <div class="border t-view-m-30pc">
+                    <div class='pad-half'>
+                        <p><strong>.t-view-m-30pc</strong></p>
+                    </div>
+                </div>
+            </div>
+            
+            <p class="pad-half-top">Columns with multiple width classes for different screen sizes</p>
+            
+        
+            <div class="border">
+                <div class="border t-view-l-25pc  t-view-m-33pc t-view-s-50pc">
+                    <div class='pad-half'>
+                        <p><strong>.t-view-l-25pc, .t-view-m-33pc, t-view-s-50pc</strong></p>
+                    </div>
+                </div>
+
+                    <div class="border t-view-l-45pc t-view-m-33pc t-view-s-50pc">
+                    <div class='pad-half'>
+                        <p><strong>.t-view-l-45pc, .t-view-m-33pc, t-view-s-50pc</strong></p>
+                    </div>
+                </div>
+
+                 <div class="border t-view-l-30pc t-view-s-50pc t-view-m-33pc ">
+                    <div class='pad-half'>
+                        <p><strong>.t-view-l-30pc, .t-view-m-33pc, t-view-s-50pc</strong></p>
+                    </div>
+                </div>
+            </div>
+
+            
+
+
+
+
+            <h3 class=" pad-top"> Fit equal columns of elements</h3>
+            <ul class="nobull">
+            <li><p><strong>.t-view-xs-fit-#</strong>  :  Show this width on Mobile Portrait screen set widths and up.</p></li>
+            <li><p><strong>.t-view-s-fit-#</strong> :  Show this width up to Tablet Portrait/Mobile Landscape screen set widths.</p></li>
+            <li><p><strong>.t-view-m-fit-#</strong> :  Show this width on Tablet Landscape screen set widths and up.</p></li>
+            <li><p><strong>.t-view-l-fit-#</strong>   :  Show this width on Desktop screen set widths and up.</p></li>
+            </ul>
+                  <p> The “#” can be replaced with any number 1-100.</p>
+       
+        <div class="pad-half-top">
+              <p><strong>.t-view-m-fit-3</strong></p></div>
+             <div class="border">
+                    <div class="t-view-m-fit-3">
+                        <div class="border">
+                            <div class='pad-half'>
+                                <p><strong>&nbsp;</strong></p>
+                            </div>
+                        </div>
+
+                        <div class="border">
+                            <div class='pad-half'>
+                                <p><strong>&nbsp;</strong></p>
+                            </div>
+                        </div>
+
+                         <div class="border">
+                            <div class='pad-half'>
+                               <p><strong>&nbsp;</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+     
+
+         <h3 class="pad-top">Show Elements Responsively</h3>
+
+            <ul class="nobull">
+
+            <li><p> <strong>.t-hide-under-l </strong> : Hide element under set Desktop browser widt. </p></li>
+             <li><p> <strong>.t-hide-under-m</strong>  : Hide element under  set Tablet Landscape browser width. </p></li>
+             <li><p>  <strong>.t-hide-under-s</strong>  : Hide element under set Tablet Portrait/Mobile Landscape browser width. </p></li>
+             <li><p> <strong>.t-hide-under-xs</strong>  : Hide element under set  Mobile Portrait Landscape browser width. </p></li>
+            <li><p> <strong>.t-show-under-l </strong> :  Show element only under set Desktop browser width. </p></li>
+             <li><p>  <strong>.t-show-under-m </strong> : Show element only under  set Tablet Landscape browser width. </p></li>
+             <li><p>  <strong>.t-show-under-s</strong>  : Show element only under set Tablet Portrait/Mobile Landscape browser width. </p></li>
+              <li><p> <strong>.t-show-under-xs</strong>  : Show element only under set  Mobile Portrait Landscape browser width. </p></li>
+         </ul>
+
+        <div class="pad-half-top">
+              <p><strong>.t-view-m-fit-3</strong></p></div>
+             <div class="border">
+
+                    <div class="t-view-m-fit-2">
+                        <div class="border">
+                            <p class="pad-half"> Hide elements under specific screen sizes<br/> (The Elements below will hide as the browser is sized down)</p>
+                            <div class='pad-half'>
+                                <div class="t-hide-under-l border pad-half-left">
+                                    <p><strong>.t-hide-under-l</strong></p>
+                                </div>
+                                <div class="t-hide-under-m border pad-half-left">
+                                    <p><strong>.t-hide-under-m</strong></p>
+                                </div>
+                                <div class="t-hide-under-s border pad-half-left">
+                                    <p><strong>.t-hide-under-s</strong></p>
+                                </div>
+                               
+                            </div>
+                        </div>
+
+                        <div class="border">
+                            <p class="pad-half"> Show elements only under specific screen sizes<br/> (Elements below will appear as the browser is sized down)</p>
+                            <div class='pad-half'>
+                                <div class="t-show-under-l border pad-half-left">
+                                     <p><strong>.t-show-under-l</strong></p>
+                                </div>
+                                <div class="t-show-under-m border pad-half-left">
+                                    <p><strong>.t-show-under-m</strong></p>
+                                </div>
+                                <div class="t-show-under-s border pad-half-left">
+                                     <p><strong>.t-show-under-s</strong></p>
+                                </div>
+                               
+                                 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+        <h3 class="pad-top pad-half-bottom"> Navigation </h3>
+     
+        <p class="pad-half-bottom"> Using a cobination of columns and "t-show/t-hide" styles, you can exquisitely implement a responsive header navigation with Trellis </p>
+<header class="main-nav unlock" id="t-scrollnav-holder">
+    <div id="t-scrollnav" class="t-bg-wht">
+        <nav class="t-horiz">
+            <div class="t-contain t-pos-cntr border t-pos-rel">
+                <div class="t-navbar t-clear">
+
+                    <div class="logo t-view-m-20pc t-valigner" style="height:90px">
+                        <div class="t-nofloat t-valign pad-half-left t-txt-cntr" style="width:'100%'">
+                            <div class="t-bg-grey1  t-view-xs-30pc t-view-m-100pc t-pos-cntr " style="width:120px; height:40px"></div>
+                        </div>
+                    </div>
+
+                    <div class="t-button-mobile-menu t-show-under-m t-bg-grey2">
+                        <div class="t-toggle-icon"></div>
+                    </div>
+                    <div class="t-hide-under-m t-view-m-80pc t-pos-rt t-txt-rt header-nav t-pos-rt">
+                        <ul class="t-menu  nav-collections nobull t-txt-tr pad-half-top pad-half-right pad-half-bottom">
+                            <li><a href="">Link 1</a></li>
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 1</a></li>
+                        </ul>
+                    </div>
+                    <div class="t-nav-mobile t-show-under-m">
+                        <div class="t-nav-scroller">
+                            <ul class="t-menu t-view-m-60pc nav-site nobull">
+                               <li><a href="">Link 1</a></li>
+                               <li><a href="#">Link 1</a></li>
+                               <li><a href="#">Link 1</a></li>
+                               <li><a href="#">Link 1</a></li>
+                               <li><a href="#">Link 1</a></li>
+                               <li><a href="#">Link 1</a></li>
+                           </ul>
+                       </div>
+                   </div>   
+               </div> 
+           </div> 
+            <div class="pad-half t-contain t-pos-cntr">
+        <a href="#" class="btn-smartnav">View as Static "Smart" Nav</a>
+    </div>
+       </nav>
+   </div>
+  
+</header>
+
+<p> The "Scroll Nav" is Trellis' variation of navigation that appears when you scroll up the page. The revealing of the nav when scrolling is synced with the mouse's scrolling increments &mdash; it doesn't just animate down when the user scrolls up.</p>
+<p>The "Scroll Nav" is triggered when the nav's outmost containing element has an ID of "t-scrollnav-holder" and the content of it's child element, which should contain the contents of the nav, has an ID of "t-scrollnav". This funcitonality requires the use of trellis.js and <a href="https://github.com/WickyNilliams/headroom.js" targe="_blank">Wicky Nilliams' headroom.js</a><p>
+<h4 class="pad-half-top pad-half-bottom"> Example "Smart Header" Header Code </h4>
+
+         <code><pre>
+&lt;header class="main-nav unlock" id="t-scrollnav-holder"&gt;
+    &lt;div id="t-scrollnav" class="t-bg-wht"&gt;
+        &lt;nav class="t-horiz"&gt;
+            &lt;div class="t-contain t-pos-cntr border t-pos-rel"&gt;
+                &lt;div class="t-navbar t-clear"&gt;
+&lt;!---------------------------------------------------
+                 Site Logo 
+---------------------------------------------------- !&gt;
+                    &lt;div class="logo t-view-m-20pc t-valigner" style="height:90px"&gt;
+                        &lt;div class="t-nofloat t-valign pad-half-left t-txt-cntr" style="width:'100%'"&gt;
+                            &lt;div class="t-bg-grey1  t-view-xs-30pc t-view-m-100pc t-pos-cntr " style="width:120px; height:40px"&gt;&lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+&lt;!---------------------------------------------------
+             Mobile Menu Button
+---------------------------------------------------- !&gt;
+                    &lt;div class="t-button-mobile-menu t-show-under-m t-bg-grey2"&gt;
+                        &lt;div class="t-toggle-icon"&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+&lt;!---------------------------------------------------
+             Desktop Nav Links 
+---------------------------------------------------- !&gt;
+                    &lt;div class="t-hide-under-m t-view-m-80pc t-pos-rt t-txt-rt header-nav t-pos-rt"&gt;
+                        &lt;ul class="t-menu  nav-collections nobull t-txt-tr pad-half-top pad-half-right pad-half-bottom"&gt;
+                            &lt;li&gt;&lt;a href=""&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href="#"&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href="#"&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href="#"&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href="#"&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href="#"&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/div&gt;
+&lt;!---------------------------------------------------
+            Mobile Version of Nav 
+---------------------------------------------------- !&gt;
+                    &lt;div class="t-nav-mobile t-show-under-m"&gt;
+                        &lt;div class="t-nav-scroller"&gt;
+                            &lt;ul class="t-menu t-view-m-60pc nav-site nobull"&gt;
+                               &lt;li&gt;&lt;a href=""&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+                               &lt;li&gt;&lt;a href="#"&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+                               &lt;li&gt;&lt;a href="#"&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+                               &lt;li&gt;&lt;a href="#"&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+                               &lt;li&gt;&lt;a href="#"&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+                               &lt;li&gt;&lt;a href="#"&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+                           &lt;/ul&gt;
+                       &lt;/div&gt;
+                   &lt;/div&gt;  
+&lt;!---------------------------------------------------
+            End Mobile Version of Nav 
+---------------------------------------------------- !&gt;
+               &lt;/div&gt; 
+           &lt;/div&gt; 
+       &lt;/nav&gt;
+   &lt;/div&gt;
+&lt;/header&gt;
+
+         </pre></code>
+
+
+ <a href="https://github.com/theelixirhaus/Trellis" target="_blank" class="btn-github pad-half-bottom"><img src="http://www.theelixirhaus.com/wp-content/themes/theelixirhaus-v2/assets/img/projects/brewer/btn-github.png" alt="Link to Repo"></a>
+    </div> 
+<div class="pad-half"></div>
+  </div>
+
+        <script src="scripts.js"></script>
+    </body>
+</html>

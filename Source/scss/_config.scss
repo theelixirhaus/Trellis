@@ -1,0 +1,39 @@
+/*The Width of the site in pixels, percent, or auto*/
+$t-site-width:1024px;
+$t-site-padding:80px;
+
+/* Responsive sizes*/
+$t-mobile-landscape: 501px; /* Min width */
+$t-tablet-portrait: 767px; /* Min width */
+$t-desktop: 1023px; /* Min width */
+
+/* Paragraph Line Height and Margin */
+$t-p-lh: 1.5em;
+$t-p-marg:26px;
+
+/* Paragraph Line Height and Margin */
+$t-mobile-menu-btn-clr: #fff;
+
+/*Colors*/
+$t-color-primary:#0099bb;
+$t-color-secondary:#ff6622;
+$t-color-tertiary:#6ccccb;
+$t-color-quaternary:#f3fafd;
+$t-color-quinary:#000;
+
+$t-grey-light:#ebebeb;
+$t-grey-norm:#a9a9a9;
+$t-grey-med:#6b6a6b;
+$t-grey-dark:#333;
+
+/* Text Sizes */
+$t-txt-headline-big:50px;
+$t-txt-headline-med:40px;
+$t-txt-headline-norm:30px;
+$t-txt-headline-small:25px;
+
+$t-txt-big:20px;
+$t-txt-med:16px;
+$t-txt-norm:14px;
+$t-txt-small:12px;
+$t-txt-xsmall:10px;

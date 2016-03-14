@@ -1,0 +1,224 @@
+/*
+
+++++++ Sample Responsive Columns ++++++
+
+<div class="t-contain">
+    <div class="t-view-m-50 t-view-s-100">
+        <div>
+            <h3>Title</h3>
+            <p> 
+                Sample Text
+            </p>
+            <a class="t-txt-link t-txt-big">More</a>
+        </div>
+    </div>
+    <div class="t-view-m-50 t-view-s-100">
+        <div>
+            <h3>Title</h3>
+            <p>
+                Sample Text
+            </p>
+            <a class="t-txt-link t-txt-big">More</a>
+        </div>
+    </div>
+</div>
+
+*/
+
+@media (max-width: $t-desktop) {
+  .t-hide-under-l{
+    display:none;
+  }
+}
+
+@media (max-width: $t-tablet-portrait) {
+  .t-hide-under-m{
+    display:none;
+  }
+}
+@media (max-width: $t-mobile-landscape) {
+  .t-hide-under-s{
+    display:none;
+  }
+}
+
+.t-show-under-l{
+  display:none;
+}
+
+.t-show-under-m{
+    display:none;
+} 
+
+.t-show-under-s{
+  display:none;
+}
+
+
+@media (max-width: $t-desktop) {
+  .t-show-under-l{
+    display:block;
+  }
+}
+
+@media (max-width: $t-tablet-portrait) {
+  .t-show-under-m{
+    display:block;
+  }
+}
+@media (max-width: $t-mobile-landscape) {
+  .t-show-under-s{
+    display:block;
+  }
+}
+
+
+
+
+
+
+.t-contain{
+  max-width:$t-site-width;
+}
+
+
+
+
+.t-col{
+  float:left;
+}
+
+.t-valigner{
+  //@include displayflex();
+  display: table;
+  width:100%;
+  .t-valign{
+   // display:block;
+      display: table-cell;
+      vertical-align:middle;
+      width:100%;
+  }
+}
+
+/* Set grid item's width individually by percent */
+
+
+
+  @for $i from 1 through 10 {
+    $width: percentage($i/10);
+
+    .t-view-xs-#{$i}0pc {
+        float:left;
+        width: $width;
+    }
+    .t-view-xs-#{$i}5pc {
+        float:left;
+        width: $width+5;
+    }
+  }
+
+
+
+@media (min-width: $t-mobile-landscape) {
+
+
+  @for $i from 1 through 10 {
+    $width: percentage($i/10);
+
+    .t-view-s-#{$i}0pc {
+        float:left;
+        width: $width;
+    }
+    .t-view-s-#{$i}5pc {
+        float:left;
+        width: $width+5;
+    }
+  }
+}
+
+@media (min-width: $t-tablet-portrait) {
+   
+  @for $i from 1 through 10 {
+      $width: percentage($i/10);
+
+     .t-view-m-#{$i}0pc {
+          float:left;
+          width: $width;
+      }
+      .t-view-m-#{$i}5pc {
+          float:left;
+          width: $width+5;
+      }
+  }
+}
+
+@media (min-width: $t-desktop) {
+     @for $i from 1 through 10 {
+      $width: percentage($i/10);
+
+     .t-view-l-#{$i}0pc {
+          float:left;
+          width: $width;
+      }
+      .t-view-l-#{$i}5pc {
+          float:left;
+          width: $width+5;
+      }
+  }
+}
+
+
+
+
+
+/* Set items with by number of items in row*/
+
+
+ @for $i from 1 through 100 {
+    $width: percentage(1/$i);
+
+    .t-view-xs-fit-#{$i} > *{
+        float:left;
+        width: $width;
+    }
+   
+  }
+
+@media (min-width: $t-mobile-landscape) {
+   @for $i from 1 through 100 {
+    $width: percentage(1/$i);
+
+    .t-view-s-fit-#{$i} > *{
+        float:left;
+        width: $width;
+    }
+   
+  }
+}
+
+@media (min-width: $t-tablet-portrait) {
+   
+  @for $i from 1 through 100 {
+     $width: percentage(1/$i);
+
+     .t-view-m-fit-#{$i} > *{
+          float:left;
+          width: $width;
+      }
+     
+  }
+}
+@media (min-width: $t-desktop) {
+     @for $i from 1 through 100 {
+      $width: percentage(1/$i);
+
+     .t-view-l-fit-#{$i} > *{
+          float:left;
+          width: $width;
+      }
+     
+  }
+}
+
+
+

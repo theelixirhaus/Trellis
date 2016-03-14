@@ -1,0 +1,127 @@
+nav{
+	
+	&.t-horiz{
+		ul{
+			li{
+				display: inline-block;
+			}
+		}
+
+	}
+}
+
+
+
+
+
+.t-nav-mobile {
+clear:both;
+  position: relative;
+  left: 0; 
+  width: 100% !important;
+  z-index: 6000;
+  height: 0px;
+
+  ul{
+  	  height:100%;
+  	  width: 100%;
+  	 
+  }
+
+  .t-nav-scroller{
+		padding:0;
+		height:100%;
+		overflow-y: auto;
+	}
+}
+.t-nav-ease .t-nav-mobile{
+  @include transition(height .2s ease-in-out);
+}
+
+.t-nav-mobile li {
+  display: block;
+  width: 100%;
+ 
+}
+
+
+
+.t-navbar{
+	overflow:visible;
+	
+	.t-button-mobile-menu {
+		
+		width: 39px;
+		height: 37px;
+		position: absolute;
+		right: 15px;
+		top: 18px;
+		padding: 3px;
+		@include box-sizing(border-box);
+		
+	}
+		
+	.t-toggle-icon {
+		width: 100%;
+		height: 100%;
+		color: #fff;
+		border-bottom: 6px solid $t-mobile-menu-btn-clr;
+		padding-top: 1px;
+		display: block;
+	}
+	.t-toggle-icon:before, .t-toggle-icon:after {
+		border-top: 6px solid;
+		border-color:$t-mobile-menu-btn-clr;
+		content: "";
+		position: absolute;
+		left: 3px;
+		right: 3px;
+	}
+	.t-toggle-icon:before {
+		top: px;
+	}
+	.t-toggle-icon:after {
+		bottom: 40%;
+	}
+}
+
+/*
+ * This is where all the animation happens
+ */
+.t-mobmenu .t-toggle-icon, .t-toggle-icon:before, .t-toggle-icon:after {
+	@include transition-property(transform, border-color);
+	@include transition-duration(0.25s);
+	@include transition-timing-function(cubic-bezier(0.5, -0.5, 0.5, 1.5));
+}
+.t-mobmenu .t-toggle-icon {
+	@include transition-delay(0.125s);
+}
+.toggle-icon:before, .t-toggle-icon:after {
+	@include transition-delay(0s);
+	@include transform-origin(center);
+}
+
+
+.t-mobmenu {
+
+
+	.t-button-mobile-menu-icon {
+		@include transition-delay(0s);
+	}
+	
+	.t-toggle-icon:before, .t-toggle-icon:after {
+		@include transition-delay(.125s);
+	}
+	.t-toggle-icon:before {
+		@include transform(translateY(13px) rotate(135deg));
+	}
+	.t-toggle-icon {
+		border-color: transparent !important;
+	}
+	.t-toggle-icon:after {
+		@include transform(rotate(-135deg));
+	}
+}
+
+
+

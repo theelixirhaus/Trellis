@@ -1,0 +1,112 @@
+@mixin border-radius($props) {
+    -webkit-border-radius: $props;
+    -moz-border-radius: $props;
+    -ms-border-radius: $props;
+    border-radius: $props;
+}
+
+@mixin transform($props) {
+    -webkit-transform:$props;
+    -moz-transform: $props;
+    -ms-transform: $props;
+    -o-transform: $props;
+    transform: $props;
+}
+
+@mixin transition($props...) {
+    -webkit-transition:$props;
+    -moz-transition: $props;
+    -ms-transition: $props;
+    -o-transition: $props;
+    transition: $props;
+}
+
+
+@mixin transition-delay($amnt){
+    -webkit-transition-delay:$amnt;
+    -moz-transition-delay: $amnt;
+    -ms-transition-delay: $amnt;
+    -o-transition-delay: $amnt;
+    transition-delay: $amnt;
+}
+
+@mixin transition-property($amnt...){
+    -webkit-transition:$amnt;
+    -moz-transition: $amnt;
+    -ms-transition: $amnt;
+    -o-transition: $amnt;
+    transition: $amnt;
+}
+
+
+@mixin transition-duration($amnt...){
+    -webkit-transition-duration:$amnt;
+    -moz-transition-duration: $amnt;
+    -ms-transition-duration: $amnt;
+    -o-transition-duration: $amnt;
+    transition-duration: $amnt;
+}
+
+@mixin transition-timing-function($amnt...){
+    -webkit-transition-timing-function:$amnt;
+    -moz-ttransition-timing-function: $amnt;
+    -ms-transition-timing-function: $amnt;
+    -o-transition-timing-function: $amnt;
+   transition-timing-function: $amnt;
+}
+
+
+@mixin box-sizing($prop){
+    -webkit-border-sizing: $prop;
+    -moz-box-sizing: $prop;
+    -ms-box-sizing: $prop;
+    -o-box-sizing: $prop;
+    box-sizing: $prop;
+}
+
+@mixin filter($prop){
+    -webkit-filter:$prop;
+    -moz-filter:$prop;
+    -ms-filter:$prop;
+    -o-filter:$prop;
+    filter:$prop;
+}
+
+@mixin transitionFilter($props) {
+    -webkit-transition: -webkit-filter $props;
+    -moz-transition: -moz-filter $props;
+    -ms-transition:  -ms-filter $props;
+    -o-transition:  -o-filter $props;
+    transition: filter;
+}
+
+@mixin perspective($amnt){
+    -webkit-perspective:$amnt;
+    -moz-perspective: $amnt;
+    -ms-perspective: $amnt;
+    perspective: $amnt;
+}
+
+@mixin transform-origin($props){
+    -webkit-transform-origin:$props;
+    -moz-transform-origin: $props;
+    -ms-transform-origin: $props;
+    -o-transform-origin: $props;
+    transform-origin: $props;
+}
+
+@mixin  backface-visibility($prop){
+    -webkit-backface-visibility: $prop;
+    -moz-backface-visibility: $prop;
+    -ms-backface-visibility: $prop;
+    -o-backface-visibility: $prop;
+    backface-visibility: $prop;
+}
+
+@mixin  font-smoothing($prop){
+    -webkit-font-smoothing: $prop;
+    -moz-osx-font-smoothing: $prop;
+    -ms-font-smoothing: $prop;
+    -o-font-smoothing: $prop;
+    
+}

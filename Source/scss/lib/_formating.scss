@@ -1,0 +1,107 @@
+a{
+	color:inherit;
+	text-decoration:none
+}
+
+p a{
+	text-decoration:underline;
+}
+
+body{
+	font-size:$t-txt-norm;
+}
+
+img{
+	max-width: 100%;
+}
+
+
+h1{
+	font-size:$t-txt-headline-big;
+}
+
+h2{
+	font-size:$t-txt-headline-med;
+}
+
+h3{
+	font-size:$t-txt-headline-norm;
+}
+
+h4{
+	font-size:$t-txt-headline-small;
+}
+
+h5{
+	font-size:$t-txt-big
+}
+
+p{
+	font-size:$t-txt-med;
+	line-height:$t-p-lh;
+	margin:$t-p-marg 0;
+}
+
+.t-txt-h1{
+	font-size:$t-txt-headline-big;
+}
+.t-txt-h2{
+	font-size:$t-txt-headline-med;
+}
+.t-txt-h3{
+	font-size:$t-txt-headline-norm;
+}
+.t-txt-h4{
+	font-size:$t-txt-headline-small;
+}
+.t-txt-h5{
+	font-size:$t-txt-big
+}
+
+.t-txt-big{
+	font-size:$t-txt-big;
+}
+
+.t-txt-med{
+	font-size:$t-txt-med;
+}
+.t-txt-norm{
+	font-size:$t-txt-norm;
+}
+
+.t-txt-sm{
+	font-size:$t-txt-small;
+}
+
+.t-txt-cntr{
+	text-align:center;
+}
+
+.t-txt-rt{
+	text-align:right;
+}
+
+.t-pos-cntr{
+	margin-left:auto;
+	margin-right:auto;
+}
+.t-pos-rt{
+	margin-left:auto;
+	margin-right:0;
+}
+
+.t-pos-rel{
+	position: relative
+}
+.t-pos-abs{
+	position: absolute
+}
+
+
+.t-pos-fixed{
+	position: absolute
+}
+
+.t-nofloat{
+	float:none !important;
+}

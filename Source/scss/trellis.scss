@@ -1,0 +1,62 @@
+/* Libraries */
+@import "config";
+@import "lib/mixins";
+@import "lib/colors";
+@import "lib/formating";
+@import "lib/grid";
+@import "lib/nav";
+@import "lib/scroll-nav";
+
+@mixin basicblock {
+	@include box-sizing(border-box);
+
+	//remove bottom margin of last paragraphs within elements
+	> p:last-of-type{
+		margin-bottom:0;
+	}
+	> p:first-of-type{
+		margin-top:0;
+	}
+}
+
+/* Additional Normalization */
+div, section, article, img {
+	//Make elements constrained boxes who's padding doesn't effect size.
+	overflow:hidden;
+	display:block;
+	margin:0;
+	padding:0;
+
+	@include basicblock;
+	
+}
+
+
+ ul, li, span{
+
+
+	@include basicblock;
+
+ }
+
+img{
+	display:inline-block;
+}
+
+h1,h2,h3,h4,h5{
+	//Remove margins and simplify line heights
+	margin:0;
+	line-height:1.3em;
+	display:block;
+	width:100%;
+	//remove top margin of firs paragraphs within elements
+	+ p{
+		margin-top:0;
+	}
+}
+
+/*For Wordpress Admin bar */
+
+#wpadminbar, #wpadminbar *{
+	overflow:visible;
+}

@@ -1,0 +1,80 @@
+/* Text colors */
+
+.t-txt-clr1{
+	color:$t-color-primary;
+}
+.t-txt-clr2{
+	color:$t-color-secondary;
+}
+.t-txt-clr3{
+	color:$t-color-tertiary;
+}
+.t-txt-clr4{
+	color:$t-color-quaternary;
+}
+.t-txt-clr5{
+	color:$t-color-quinary;
+}
+
+
+.t-txt-grey1{
+	color:$t-grey-light;
+	-webkit-font-smoothing: antialiased;
+}
+.t-txt-grey2{
+	color:$t-grey-norm;
+}
+.t-txt-grey3{
+	color:$t-grey-med;
+}
+.t-txt-grey4{
+	color:$t-grey-dark;
+}
+
+.t-txt-blk{
+	color:#000;
+}
+.t-txt-wht{
+	color:#fff;
+	-webkit-font-smoothing: antialiased;
+}
+
+
+
+/* Background colors */
+.t-bg-clr1{
+	background-color:$t-color-primary;
+}
+.t-bg-clr2{
+	background-color:$t-color-secondary;
+}
+.t-bg-clr3{
+	background-color:$t-color-tertiary;
+}
+.t-bg-clr4{
+	background-color:$t-color-quaternary;
+}
+.t-bg-clr5{
+	background-color:$t-color-quinary;
+}
+
+
+.t-bg-grey1{
+	background-color:$t-grey-light;
+}
+.t-bg-grey2{
+	background-color:$t-grey-norm;
+}
+.t-bg-grey3{
+	background-color:$t-grey-med;
+}
+.t-bg-grey4{
+	background-color:$t-grey-dark;
+}
+
+.t-bg-blk{
+	background-color:#000;
+}
+.t-bg-wht{
+	background-color:#fff;
+}
