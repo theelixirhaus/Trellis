@@ -1,16 +1,8 @@
-nav{
-	
-	&.t-horiz{
-		ul{
-			li{
-				display: inline-block;
-			}
-		}
-
+.t-horiz{
+	> li, > ul li{
+			display: inline-block;
 	}
 }
-
-
 
 
 
@@ -78,7 +70,7 @@ clear:both;
 		right: 3px;
 	}
 	.t-toggle-icon:before {
-		top: px;
+		top: 4px;
 	}
 	.t-toggle-icon:after {
 		bottom: 40%;

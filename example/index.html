@@ -249,6 +249,18 @@
               <li><p> <strong>.t-show-under-xs</strong>  : Show element only under set  Mobile Portrait Landscape browser width. </p></li>
          </ul>
 
+          <h3 class="pad-top">Display &lt;li&gt;'s Horizontally</h3>
+                    <p> <strong>.t-horiz : </strong> Add to UL tag or UL parent tag.</p>
+            <ul class="nobull t-horiz pad-bottom">
+
+           <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 1</a></li>
+         </ul>
+
         <div class="pad-half-top">
               <p><strong>.t-view-m-fit-3</strong></p></div>
              <div class="border">
@@ -295,13 +307,13 @@
         <p class="pad-half-bottom"> Using a cobination of columns and "t-show/t-hide" styles, you can exquisitely implement a responsive header navigation with Trellis </p>
 <header class="main-nav unlock" id="t-scrollnav-holder">
     <div id="t-scrollnav" class="t-bg-wht">
-        <nav class="t-horiz">
+        <nav>
             <div class="t-contain t-pos-cntr border t-pos-rel">
                 <div class="t-navbar t-clear">
 
                     <div class="logo t-view-m-20pc t-valigner" style="height:90px">
                         <div class="t-nofloat t-valign pad-half-left t-txt-cntr" style="width:'100%'">
-                            <div class="t-bg-grey1  t-view-xs-30pc t-view-m-100pc t-pos-cntr " style="width:120px; height:40px"></div>
+                            <div class="t-bg-grey1  t-view-xs-30pc t-view-m-100pc t-pos-cntr" style="width:120px; height:40px"></div>
                         </div>
                     </div>
 
@@ -309,8 +321,8 @@
                         <div class="t-toggle-icon"></div>
                     </div>
                     <div class="t-hide-under-m t-view-m-80pc t-pos-rt t-txt-rt header-nav t-pos-rt">
-                        <ul class="t-menu  nav-collections nobull t-txt-tr pad-half-top pad-half-right pad-half-bottom">
-                            <li><a href="">Link 1</a></li>
+                        <ul class="t-menu  nav-collections nobull t-txt-tr pad-half-top t-horiz pad-half-right pad-half-bottom">
+                            <li><a href="#">Link 1</a></li>
                             <li><a href="#">Link 1</a></li>
                             <li><a href="#">Link 1</a></li>
                             <li><a href="#">Link 1</a></li>
@@ -321,7 +333,7 @@
                     <div class="t-nav-mobile t-show-under-m">
                         <div class="t-nav-scroller">
                             <ul class="t-menu t-view-m-60pc nav-site nobull">
-                               <li><a href="">Link 1</a></li>
+                               <li><a href="#">Link 1</a></li>
                                <li><a href="#">Link 1</a></li>
                                <li><a href="#">Link 1</a></li>
                                <li><a href="#">Link 1</a></li>
@@ -365,10 +377,10 @@
                         &lt;div class="t-toggle-icon"&gt;&lt;/div&gt;
                     &lt;/div&gt;
 &lt;!---------------------------------------------------
-                   Desktop Nav Links 
+                   Desktop Nav Links
 ----------------------------------------------------!&gt;
                     &lt;div class="t-hide-under-m t-view-m-80pc t-pos-rt t-txt-rt header-nav t-pos-rt"&gt;
-                        &lt;ul class="t-menu nobull t-txt-tr pad-half-top pad-half-right pad-half-bottom"&gt;
+                        &lt;ul class="t-menu t-horiz nobull t-txt-tr pad-half-top pad-half-right pad-half-bottom"&gt;
                             &lt;li&gt;&lt;a href=""&gt;Link 1&lt;/a&gt;&lt;/li&gt;
                             &lt;li&gt;&lt;a href="#"&gt;Link 1&lt;/a&gt;&lt;/li&gt;
                             &lt;li&gt;&lt;a href="#"&gt;Link 1&lt;/a&gt;&lt;/li&gt;
@@ -402,8 +414,10 @@
 &lt;/header&gt;
 
          </pre></code>
-
-
+ <div class="pad-half-top pad-bottom t-contain">
+<p><strong>.t-mobmenu</strong><br/>
+When the mobile menu is expanded, the class .t-mobmenu is added to the HTML tag (when the jquery.trellis.js script is included) so that any neccessary styling can be added to page elements while the menu is open. For example it often necessary to set the body and html to "overflow:hidden" and position them absolutely so the page doesn't scroll when scrolling the menu.</p>
+</div>
  <a href="https://github.com/theelixirhaus/Trellis" target="_blank" class="btn-github pad-half-bottom"><img src="http://www.theelixirhaus.com/wp-content/themes/theelixirhaus-v2/assets/img/projects/brewer/btn-github.png" alt="Link to Repo"></a>
     </div> 
 <div class="pad-half"></div>
