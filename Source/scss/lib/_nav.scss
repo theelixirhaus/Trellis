@@ -1,14 +1,9 @@
-nav{
-	
-	&.t-horiz{
-		ul{
-			li{
-				display: inline-block;
-			}
-		}
-
+.t-horiz{
+	> li, > ul li{
+			display: inline-block;
 	}
 }
+
 
 
 
