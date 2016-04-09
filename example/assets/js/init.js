@@ -37,6 +37,21 @@
         }
     }).init();
 
+   /* $('a').click(function(e) {
+        
+        if($(this).attr('href').indexOf(window.location.hostname) < 0  && $(this).attr('href').indexOf('://') > -1){
+             e.preventDefault();
+             window.open(
+                $(this).attr('href'),
+                '_blank' // <- This is what makes it open in a new window.
+             );
+        }
+        
+
+
+        });
+*/
+
 
 
 oldScroll=0;

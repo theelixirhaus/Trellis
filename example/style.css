@@ -2368,6 +2368,7 @@ th {
 /* Min width */
 /* Min width */
 /* Min width */
+/* Min width */
 /* Paragraph Line Height and Margin */
 /* Paragraph Line Height and Margin */
 /*Colors*/
@@ -5071,7 +5072,14 @@ p {
     width: 1%;
   }
 }
-nav.t-horiz ul li {
+#t-scrollnav-holder {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
+}
+
+.t-horiz > li, .t-horiz > ul li {
   display: inline-block;
 }
 
@@ -5139,7 +5147,7 @@ nav.t-horiz ul li {
   right: 3px;
 }
 .t-navbar .t-toggle-icon:before {
-  top: px;
+  top: 4px;
 }
 .t-navbar .t-toggle-icon:after {
   bottom: 40%;
@@ -5217,13 +5225,6 @@ nav.t-horiz ul li {
   -ms-transform: rotate(-135deg);
   -o-transform: rotate(-135deg);
   transform: rotate(-135deg);
-}
-
-#t-scrollnav-holder {
-  position: fixed;
-  width: 100%;
-  z-index: 1000;
-  top: 0;
 }
 
 /* Additional Normalization */

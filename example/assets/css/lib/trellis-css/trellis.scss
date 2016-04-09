@@ -3,9 +3,9 @@
 @import "lib/mixins";
 @import "lib/colors";
 @import "lib/formating";
-@import "lib/nav";
-@import "lib/scroll-nav";
 @import "lib/grid";
+@import "lib/scroll-nav";
+@import "lib/nav";
 
 @mixin basicblock {
 	@include box-sizing(border-box);

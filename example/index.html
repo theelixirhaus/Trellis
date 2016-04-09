@@ -14,26 +14,33 @@
     <body>
 
 
-        <div class="t-contain t-pos-cntr top-element">
-            
-               <div class="pad-top pad-bottom">
-                <h1 class="pad-half-bottom">Trellis CSS</h1>
-                <h3>A CSS base and framework. </h3>
-                <p>Many CSS frameworks are enginiered with a multitude of formating styles in an effort to help you quickly achieve a well designed layout. These included format styles can become a hinderance when the need comes to override them because of design requirements.</p> 
-                <p>Trellis keeps styles to a configurable set of formating and responsive layout classes. This allows you the freedom to style elements as you need, and quickly structure your content while keeping global options and settings centralized.</p>
+       <div class="t-contain t-pos-cntr top-element">
+<div class="pad-bottom">
+<div class="pad-half-top pad-bottom">
+
+<img class="alignnone size-medium wp-image-561" style="float: left; margin: 0 10px 10px 0;" src="http://www.theelixirhaus.com/wp-content/uploads/2016/03/trellis.svg" alt="trellis" width="98" height="117" align="middle" />
+<div>
+<h1 class="pad-half-top">Trellis CSS</h1>
+<h3>A CSS base and framework.</h3>
+</div>
+</div>
+<p>
+Many CSS frameworks limit your layouts to a maximum width or grid size, and are engineered to include many styles in an effort to get you up and running fast. Unfortunately these features become a hinderance when you need to achieve certain design requirements. Trellis doesn’t include multitudes of styles that you’ll find yourself overriding or  limit your layout's grid width.</p>
+<p>
+Trellis keeps styles to a configurable set of formating and responsive layout classes. This allows you the freedom to style elements as you need, and quickly structure your content while keeping global options and settings centralized.</p>
           <a href="https://github.com/theelixirhaus/Trellis" target="_blank" class="btn-github"><img src="http://www.theelixirhaus.com/wp-content/themes/theelixirhaus-v2/assets/img/projects/brewer/btn-github.png" alt="Link to Repo"></a>
               <div class="pad-half-bottom"></div>
 
                 <p> Trellis does add certain style properties to some elements to help give you the "plainest" canvas for building upon.</p>
     
-                <p> Some of the key styles Trellis adds are :</p>
+                <p> Some of the key styles Trellis adds are:</p>
                 <ul class="nobull">
-                    <li><p><strong>Box Sizing</strong>  <br/>Set div, section, article, img, span to "Border-box" box sizing so that padding and borders to enlarge the dimensions of said objects when they are applied.</p></li>
-                    <li><p><strong>P Tags </strong>  <br/>The top margin is removed from the first occurrence of a P tag within a block, and the bottom margin of the last P tag is removed from the same block. This allows for total control over the spacing of elements above and below articles to maintain consistency.</p></li>
-                    <li><p><strong>Overflow</strong>  <br />div, section, article, img tags are all set to to have a "hidden" Overflow by default, to allow containers to properly encompass ttheir elements.</p></li>
+                    <li><p><strong>Box Sizing</strong>  <br/>Div, section, article, span, and img are set to &#8220; Border-box&#8221; box sizing. This ensures that padding and borders to don&rsquo;t enlarge the dimensions of those objects when they are applied.</p></li>
+                    <li><p><strong>P Tags </strong>  <br/>The top margin is removed from the first occurrence of a P tag within a container, and the bottom margin of the last P tag within a container. This allows for total control over the spacing of elements above and below articles.</p></li>
+                    <li><p><strong>Overflow</strong>  <br />Div, section, article, img tags are all set to to have a "hidden" Overflow by default, to allow containers to properly encompass their elements.</p></li>
                 </ul>
 
-                <p> Additionally Trellis uses a configuration file to set global SCSS variables for screen break points, colors, font sites, and the site's maximum width. It also allows you to set a site padding variable. This variable helps maintain consistent spacing tthroughout your site by using it and factors of it.
+                <p>Additionally Trellis uses a configuration file to set global SCSS variables for screen break points, colors, font sizes, and the site's maximum width. It also allows you to set a site padding variable. This variable helps maintain consistent spacing throughout your site by using it and factors of it.</p>
 
             </div>
 
@@ -102,11 +109,11 @@
 
             <h2 class="pad-half-top">Element Positioning</h2>
 
-            <p><strong> .t-pos-rel  </strong> :  Position element “relative”. </p>
+            <p><strong> .t-pos-rel  </strong> :  Position element &#8220; relative&#8221;. </p>
 
-            <p><strong> .t-pos-abs  </strong> :  Position element “absolute”.  </p>
+            <p><strong> .t-pos-abs  </strong> :  Position element &#8220; absolute&#8221;.  </p>
 
-           <p><strong> .t-pos-fixed  </strong> :  Position element “fixed”.</p>
+           <p><strong> .t-pos-fixed  </strong> :  Position element &#8220; fixed&#8221;.</p>
             
             <div class="border pad-half">
                 <div class="t-pos-cntr marg-half-bottom">
@@ -122,11 +129,11 @@
 
             <h2 class="pad-top">Layout</h2>
 
-            <div style="width:100%; display:block"> <p><strong> .t-valigner</strong> : Vertical Align Elements  - Parent element needs set heigh</p></div>
+            <div style="width:100%; display:block"> <p><strong> .t-valigner</strong> : Vertical Align Elements  - Parent element needs set height.</p></div>
             <div class="t-valigner border" style="height:400px">
               
                 <div class="t-valign pad-half">
-                    <p><strong>.t-valign  </strong>:   vertically aligned child element</p>
+                    <p><strong>.t-valign  </strong>: Vertically aligned child element.</p>
                 </div>
             </div>
 
@@ -134,7 +141,7 @@
             <h2 class="pad-top">Establish a site width</h2>
 
             <div class="border pad-half" style="max-width:900px">
-            <p><strong>.t-contain</strong>  <br/>  Adds the site’s "max-width" in order to contain elements. Used typically as the main content container of the site. Often used with .t-pos-cntr to center the container within the browser. </p>
+            <p><strong>.t-contain</strong>  <br/> Adds the site&rsquo;s &ldquo;max-width&rdquo; in order to contain elements. Used typically as the main content container of the site. Often used with .t-pos-cntr to center the container within the browser.</p>
             </div>
 
 
@@ -143,8 +150,8 @@
             <h2 class="pad-top">Responsive Grids</h2>
 
             <h3 >Defined Columns Widths</h3>
-            <p >Grid elements are positioned left and displayed as blocks. They can be set to specific responsive width.<p>
-            <p >The “#” can be replaced with any number 1-100 in increments of 5 -  I.E 0,5,10,15…</p>
+            <p >Grid elements are positioned left and displayed as blocks. They can be set to specific responsive widths using the class formats below.<p>
+            <p >Replaced the &#8220; #&#8221;  with any number 1-100 in increments of 5.<br />I.E: 0,5,10,15…</p>
           <ul class="nobull pad-half-bottom">
             <li><p><strong>.t-view-xs-#pc</strong> :   Show this width on Mobile Portrait screen widths and up.</p></li>
             <li><p><strong>.t-view-s-#pc</strong>  :   Show this width up to Tablet Portrait/Mobile Landscape screen widths.</p></li>
@@ -207,9 +214,9 @@
             <li><p><strong>.t-view-m-fit-#</strong> :  Show this width on Tablet Landscape screen set widths and up.</p></li>
             <li><p><strong>.t-view-l-fit-#</strong>   :  Show this width on Desktop screen set widths and up.</p></li>
             </ul>
-                  <p> The “#” can be replaced with any number 1-100.</p>
+                  <p> Replace &#8220; #&#8221; with with any number 1-100.</p>
        
-        <div class="pad-half-top">
+        <div>
               <p><strong>.t-view-m-fit-3</strong></p></div>
              <div class="border">
                     <div class="t-view-m-fit-3">
@@ -352,15 +359,15 @@
   
 </header>
 
-<p> The "Scroll Nav" is Trellis' variation of navigation that appears when you scroll up the page. The revealing of the nav when scrolling is synced with the mouse's scrolling increments &mdash; it doesn't just animate down when the user scrolls up.</p>
+<p>The "Scroll Nav" is Trellis' variation of navigation that appears when you scroll up the page. The revealing of the nav when scrolling is synced with the mouse's scrolling increments — it doesn't just animate down when the user scrolls up.</p>
 <p>The "Scroll Nav" is triggered when the nav's outmost containing element has an ID of "t-scrollnav-holder" and the content of it's child element, which should contain the contents of the nav, has an ID of "t-scrollnav". This funcitonality requires the use of trellis.js and <a href="https://github.com/WickyNilliams/headroom.js" targe="_blank">Wicky Nilliams' headroom.js</a><p>
 <h4 class="pad-half-top pad-half-bottom"> Example "Scroll Nav" Header Code </h4>
 
-         <code><pre>
-&lt;header class="main-nav unlock" id="t-scrollnav-holder"&gt;
+         <pre class="code">
+&lt;header  id="t-scrollnav-holder"&gt;
     &lt;div id="t-scrollnav" class="t-bg-wht"&gt;
         &lt;nav class="t-horiz"&gt;
-            &lt;div class="t-contain t-pos-cntr border t-pos-rel"&gt;
+            &lt;div class="t-contain t-pos-cntr t-pos-rel"&gt;
                 &lt;div class="t-navbar t-clear"&gt;
 &lt;!---------------------------------------------------
                        Site Logo 
@@ -379,8 +386,8 @@
 &lt;!---------------------------------------------------
                    Desktop Nav Links
 ----------------------------------------------------!&gt;
-                    &lt;div class="t-hide-under-m t-view-m-80pc t-pos-rt t-txt-rt header-nav t-pos-rt"&gt;
-                        &lt;ul class="t-menu t-horiz nobull t-txt-tr pad-half-top pad-half-right pad-half-bottom"&gt;
+                    &lt;div class="t-hide-under-m t-view-m-80pc t-pos-rt t-txt-rt t-pos-rt"&gt;
+                        &lt;ul class="t-menu t-horiz  t-txt-tr"&gt;
                             &lt;li&gt;&lt;a href=""&gt;Link 1&lt;/a&gt;&lt;/li&gt;
                             &lt;li&gt;&lt;a href="#"&gt;Link 1&lt;/a&gt;&lt;/li&gt;
                             &lt;li&gt;&lt;a href="#"&gt;Link 1&lt;/a&gt;&lt;/li&gt;
@@ -394,7 +401,7 @@
 ----------------------------------------------------!&gt;
                     &lt;div class="t-nav-mobile t-show-under-m"&gt;
                         &lt;div class="t-nav-scroller"&gt;
-                            &lt;ul class="t-menu t-view-m-60pc nav-site nobull"&gt;
+                            &lt;ul class="t-menu t-view-m-60pc"&gt;
                                &lt;li&gt;&lt;a href=""&gt;Link 1&lt;/a&gt;&lt;/li&gt;
                                &lt;li&gt;&lt;a href="#"&gt;Link 1&lt;/a&gt;&lt;/li&gt;
                                &lt;li&gt;&lt;a href="#"&gt;Link 1&lt;/a&gt;&lt;/li&gt;
@@ -413,10 +420,10 @@
    &lt;/div&gt;
 &lt;/header&gt;
 
-         </pre></code>
+         </pre>
  <div class="pad-half-top pad-bottom t-contain">
 <p><strong>.t-mobmenu</strong><br/>
-When the mobile menu is expanded, the class .t-mobmenu is added to the HTML tag (when the jquery.trellis.js script is included) so that any neccessary styling can be added to page elements while the menu is open. For example it often necessary to set the body and html to "overflow:hidden" and position them absolutely so the page doesn't scroll when scrolling the menu.</p>
+When the mobile menu is expanded, the class .t-mobmenu is added to the HTML tag (when the jquery.trellis.js script is included) so that any neccessary styling can be added to page elements while the menu is open. For example, it often necessary to set the body and html to "overflow:hidden" and position them absolutely so the page doesn't scroll when scrolling the menu.</p>
 </div>
  <a href="https://github.com/theelixirhaus/Trellis" target="_blank" class="btn-github pad-half-bottom"><img src="http://www.theelixirhaus.com/wp-content/themes/theelixirhaus-v2/assets/img/projects/brewer/btn-github.png" alt="Link to Repo"></a>
     </div> 
