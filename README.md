@@ -24,6 +24,6 @@ Trellis includes a library of Mixins in Source/scss/lib/mixins.scss that you can
 
 
 ###Reference & Help
-Included is an example page in "Examples" outlining the primary class names with usage examples and descriptions. 
+Included is an example page in the "Example" folder. The primary class names with usage examples and descriptions can be found there. 
 
 You can also view that page here: http://www.theelixirhaus.com/projects/trellis/
