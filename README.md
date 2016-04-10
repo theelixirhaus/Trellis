@@ -8,7 +8,7 @@ Many CSS frameworks limit your layouts to a maximum width or grid size, and are 
 ###Installation
 Once downloaded, organize the "trellis-scss" and "trellis-js" folders located in "Source" within you CSS/SCSS and Javscript files. Process trellis.scss with your SCSS files and jquery.trellis.js with your javascript files.
 
-If you're not familair with SCSS check out http://sass-lang.com/. If your not familair with processing it check out https://prepros.io/.
+If you're not familair with SCSS, check out http://sass-lang.com/. If your not familair with processing it, check out https://prepros.io/.
 
 **Important Note!**
 
