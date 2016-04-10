@@ -8,6 +8,8 @@ Many CSS frameworks limit your layouts to a maximum width or grid size, and are 
 ###Installation
 Once downloaded, organize the "trellis-scss" and "trellis-js" folders located in "Source" within you CSS/SCSS and Javscript files. Process trellis.scss with your SCSS files and jquery.trellis.js with your javascript files.
 
+If you're not familair with processing SCSS, check out https://prepros.io/ to get going quick.
+
 **Important Note!**
 
 Including jquery.trellis.js is only necessary to incorporate Trellis' "Scroll Nav" feature. jquery.trellis.js requires the use of Headroom.js http://wicky.nillia.ms/headroom.js/. Headroom.js adds classes to the HTML tag to aid in the settign of scroll states for the "Scroll Nav". 
