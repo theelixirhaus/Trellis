@@ -1,5 +1,5 @@
 # Trellis CSS
-A CSS base and responsive framework
+A CSS base and responsive framework.
 
 Trellis keeps styles to a configurable set of formating and responsive layout classes. This allows you the freedom to style elements as you need, and quickly structure your content while keeping global options and settings centralized.
 
