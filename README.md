@@ -6,7 +6,7 @@ Trellis keeps styles to a configurable set of formating and responsive layout cl
 Many CSS frameworks limit your layouts to a maximum width or grid size, and are engineered to include many styles in an effort to get you up and running fast. Unfortunately these features become a hinderance when you need to achieve certain design requirements. Trellis doesn’t include multitudes of styles that you’ll find yourself overriding or limit your layout’s grid width.
 
 ###Installation
-Once downloaded, organize the "trellis-scss" and "trellis-js" folders located in "Source" within you CSS/SCSS and Javscript files. Process trellis.scss with your main SCSS file and jquery.trellis.js with your javascript files.
+Once downloaded, organize the "trellis-scss" and "trellis-js" folders located in "Source" within you CSS/SCSS and Javscript files. Process trellis.scss with your SCSS files and jquery.trellis.js with your javascript files.
 
 **Important Note!**
 
