@@ -16,6 +16,6 @@ Including jquery.trellis.js is only necessary to incorporate Trellis' "Scroll Na
 
 
 ###Reference & Help
-Included is an example page outlining the primary class names with usage descriptions. 
+Included is an example page outlining the primary class names with usage examples and descriptions. 
 
 You can also view that page here: http://www.theelixirhaus.com/projects/trellis/
