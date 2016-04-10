@@ -2,7 +2,6 @@
 $ =jQuery;
 var header = document.querySelector("html");
 // construct an instance of Headroom, passing the element
-navOffset = $('.parallax-container').height();
 
 new Headroom(header, {
         tolerance: {
