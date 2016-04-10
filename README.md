@@ -11,7 +11,7 @@ Once downloaded, organize and or rename the Trellis "Source" folder within your 
 Trellis includes a library of Mixins in Source/scss/lib/mixins.scss that you can take advantage of.
 
 
-###Reference
+###Reference & Help
 Included is an example page outlining the primary class names with usage descriptions. 
 
 You can also view that page here: http://www.theelixirhaus.com/projects/trellis/
