@@ -10,7 +10,7 @@ del{
 	text-decoration: none;
 }
 h1, h2{
-	font-family: 'Roboto Condensed', "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight:600;
 	line-height:.9em;
 }
@@ -44,15 +44,6 @@ code{
 	padding:0;
 }
 
-.txt-pacifico{
-	font-family: 'Pacifico', "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-weight:100 !important;
-}
-
-.txt-roboto-condenced{
-	font-family: 'Roboto Condensed', "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-weight:600;
-}
 
 a.txtlink{
 	font-size:$t-txt-med;

@@ -1,30 +1,3 @@
-/*
-
-++++++ Sample Responsive Columns ++++++
-
-<div class="t-contain">
-    <div class="t-view-m-50 t-view-s-100">
-        <div>
-            <h3>Title</h3>
-            <p> 
-                Sample Text
-            </p>
-            <a class="t-txt-link t-txt-big">More</a>
-        </div>
-    </div>
-    <div class="t-view-m-50 t-view-s-100">
-        <div>
-            <h3>Title</h3>
-            <p>
-                Sample Text
-            </p>
-            <a class="t-txt-link t-txt-big">More</a>
-        </div>
-    </div>
-</div>
-
-*/
-
 @media (max-width: $t-desktop) {
   .t-hide-under-l{
     display:none;

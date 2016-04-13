@@ -1,3 +1,6 @@
+
+/* Customize Scroll Nav function for use in example */
+
 $(function(){
 
 $('.btn-smartnav').click(function(e){
