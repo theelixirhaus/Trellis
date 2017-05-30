@@ -21,6 +21,7 @@ new Headroom(header, {
 
 var navH;
 
+
 function sizeNav() {
     if ($('.t-mobmenu').length == 0) {
         navH = $('#t-scrollnav').height();
@@ -35,14 +36,22 @@ function sizeNav() {
 
 }
 
-$(window).resize(function() {
-    sizeNav();
-    if ($('.t-mobmenu').length && navdelay == 0) {
-        $(".t-button-mobile-menu").click();
-    }
-});
-$(window).resize();
+var sizing=false;
+$(window).resize(function(){
+        sizeNav();    
+        if ($('.t-mobmenu').length && $(window).width()<1024 && sizing==false){
+            sizing = true;
 
+            $(".t-button-mobile-menu").click();
+           //console.log('close button');
+              setTimeout(
+              function(){
+                sizing = false;
+              },1000)
+        }
+});
+
+setTimeout(function(){ $(window).resize() }, 500);
 
 
 oldScroll = 0;
